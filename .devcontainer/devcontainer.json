@@ -14,12 +14,12 @@
     // "appPort": [],
     
     // Uncomment the next line to run commands after the container is created.
-    //"postCreateCommand": "",
+    "postCreateCommand": "/bin/ash ./.devcontainer/nix-theme-setup.sh",
     
     // Comment out the next line if you want to run as root instead
-    "remoteUser": "vscode",
+    // "remoteUser": "vscode",
 
-    "remoteEnv": { "TMPDIR": "${containerEnv:HOME}/tmp" },
+    //"remoteEnv": { "TMPDIR": "${containerEnv:HOME}/tmp" },
     
     // Add the IDs of extensions you want installed when the container is created in the array below.
     "extensions": [
